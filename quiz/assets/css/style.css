@@ -1,0 +1,23 @@
+header .topnav{display: inline-block;float: right;margin-top: 40px;}
+.page-template-times-dashboard #header-image{ background: #fff5f3;}
+.page-template-times-dashboard #header-image img,.page-template-times-dashboard #header-image .black-overlay{ display: none;}
+.page-template-times-dashboard .banner-wrapper    {background: #fff5f3;}
+.times-quiz{margin-top: 50px;}
+.times-quiz .btn{font-family: inherit;border: 1px solid;}
+.times-quiz .btn-link{color:#FE5D37; font-size: 85%;}
+
+.times-quiz  .pagination .page-numbers{ list-style: none;}
+.times-quiz  .pagination .page-numbers li{float:left; display: inline-block; border: 1px solid #ddd; margin-right: 2px;}
+.times-quiz  .pagination .page-numbers li a{ padding: 2px 5px;}
+.times-quiz  .pagination .page-numbers li span{ padding: 2px 5px;}
+.timesquiz-box{ color: #888;}
+
+.quizstart-conatiner{ position: relative;}
+.quizstart-conatiner .quizstart-wrapper{ position: fixed; top:0px; bottom: 0px; left:0px; right: 0px; z-index: 99999; overflow-y:scroll; background:  rgba(100, 100, 100, .8);}
+.quiz-card { max-width: 800px; margin: 10px auto;}
+body:has(.quizstart-conatiner){ overflow:hidden;}
+
+.quizstart-conatiner .option-text span{ text-transform: uppercase;font-weight: bold;} 
+.quizstart-conatiner .option-item.active { background-color: #d1e7dd; border-color: #198754;  font-weight: bold;}
+.quizstart-conatiner .option-indicator {position: absolute; right: 15px;top: 50%;transform: translateY(-50%); font-size: 1.2rem; display: none;}
+.quizstart-conatiner .option-item.active .option-indicator{ display: block;}
