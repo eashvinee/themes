@@ -1,16 +1,12 @@
 <?php 
     $quiz_id=$_GET['id'];
-    //$mcqs=times_get_quizmcq_id($quiz_id);
     
     $current_user = wp_get_current_user();
     $student_id=$current_user->ID;
 
-    $first_name = $current_user->user_firstname;
-    $last_name  = $current_user->user_lastname;
-
     $key=1;
 
-    $mcqs=times_get_mcq_to_show($quiz_id);
+    $mcqs=Quiz\QuizPanel::getMCQsForQuiz($quiz_id);
 
    if(!empty($mcqs)):
 ?>
@@ -19,16 +15,6 @@
 <input type="hidden" name="redirect_to" value="<?php echo 'my-account/?tab=quizstart&next=quizthankyou&id='.$quiz_id; ?>" />
 <input type="hidden" name="studentquiz" value="quizmcq" />
 <div class="container">
-            <?php
-            $participate=get_post_meta($quiz_id, 'quiz_participate_'.$student_id, true);
-                /*echo "<pre>";
-                echo $first_name . ' ' . $last_name;
-                print_r($quiz_participate);
-                echo "</pre>";*/
-
-                
-
-            ?>
     <?php foreach($mcqs as $mcq): 
        $options= get_comment_meta( $mcq->comment_ID, '_mcq_options',true );
                  

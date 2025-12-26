@@ -1,4 +1,17 @@
 header .topnav{display: inline-block;float: right;margin-top: 40px;}
+.menu-item.auth-link{ display: flex; gap: 20px;}
+
+form#registerForm{ margin-top: 30px;margin-bottom: 30px;}
+form#registerForm input{ border-radius: 14px;}
+
+form#loginForm{ margin-top: 30px;margin-bottom: 30px;}
+form#loginForm input{ border-radius: 14px;}
+
+li.menu-item .logout-link{color:#FE5D37;}
+
+.btn-register-submit{background-color: #0092C0; color: #fff;}
+.btn-login-submit{background-color: #0092C0; color: #fff;}
+
 .page-template-times-dashboard #header-image{ background: #fff5f3;}
 .page-template-times-dashboard #header-image img,.page-template-times-dashboard #header-image .black-overlay{ display: none;}
 .page-template-times-dashboard .banner-wrapper    {background: #fff5f3;}
